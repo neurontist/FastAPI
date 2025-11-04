@@ -1,0 +1,17 @@
+fastapi
+pydantic_settings
+sqlmodel
+alembic
+passlib
+
+# Add argon2 backend for secure password hashing
+argon2-cffi
+
+pyjwt
+pip install async-timeout aiofiles
+pip install redis[asyncio]
+
+# alembic init -t async name_of_migration_env
+# make change in env.py, scripts.py.mako
+# alembic revision --autogenerate -m "init"
+# alembic upgrade head
